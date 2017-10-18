@@ -16,11 +16,13 @@
 
     <p id="Magic_Text">
       <script type="text/javascript">
-        if ({{texto}} == "" or " ") {
-          document.getElementById("Magic_Text").setAttribute("hidden", "True");
+       var texto =   document.getElementById("Magic_Text");
+        if (texto == "" or " ") {
+        texto.setAttribute("hidden", "True");
         };
 
       </script>
+      {{texto}}
     </p>
 
   </div>
