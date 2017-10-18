@@ -10,19 +10,20 @@
 <body>
 
   <div class="Inputing">
-    <input type="text" ng-model="texto" placeholder="Write here">
+    <input type="text" id="texto1" ng-model="texto" placeholder="Write here">
   </div>
   <div class="result">
 
     <p id="Magic_Text">
       <script type="text/javascript">
        var texto =   document.getElementById("Magic_Text");
-        if (texto == "" or " ") {
+       var collect = document.getElementById("texto1");
+        if (collect == "" or " ") {
         texto.setAttribute("hidden", "True");
         };
 
       </script>
-      {{texto}} + "!"
+      {{texto}}!
     </p>
 
   </div>
